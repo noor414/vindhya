@@ -1,0 +1,17 @@
+In Ansible
+(visudo)
+
+root    ALL=(ALL)       ALL
+ec2-user ALL=(ALL)      NOPASSWD: ALL
+ansadmin ALL=(ALL)      NOPASSWD: ALL
+
+(vi hosts)
+[webservers]
+172.31.93.170 ansible_user=ansadmin
+
+
+In Tomcat
+(visudo)
+
+root    ALL=(ALL)       ALL
+ansadmin ALL=(ALL)      NOPASSWD: ALL
